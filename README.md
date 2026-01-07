@@ -85,8 +85,3 @@ src/
 This project is licensed under the MIT License.
 
 ---
-
-Made with ❤️ by
-Prathamesh Tiwari
-Aadesh pathak
-Kunal mishra
