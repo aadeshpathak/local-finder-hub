@@ -1,37 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* LocalPro Design System - Warm, Trust-Building Aesthetic */
 
 @layer base {
   :root {
-    /* Core palette - Warm teal & amber */
-    --background: 210 20% 98%;
-    --foreground: 220 25% 10%;
+    /* Landing Theme - Soft gradient background */
+    --background: 210 40% 98%;
+    --foreground: 222 84% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card-foreground: 222 84% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover-foreground: 222 84% 5%;
 
-    /* Primary - Warm Teal (trust & professionalism) */
-    --primary: 173 58% 39%;
+    /* Primary - Teal */
+    --primary: 180 58% 39%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Soft sage */
-    --secondary: 160 20% 95%;
-    --secondary-foreground: 173 58% 30%;
+    /* Secondary */
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 178 85% 30%;
 
-    /* Muted backgrounds */
+    /* Muted */
     --muted: 210 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted-foreground: 214 20% 52%;
 
-    /* Accent - Warm amber */
-    --accent: 38 92% 50%;
+    /* Accent - Dark Green */
+    --accent: 160 84% 39%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -39,33 +39,36 @@
 
     --border: 210 15% 90%;
     --input: 210 15% 90%;
-    --ring: 173 58% 39%;
+    --ring: 180 58% 39%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     /* Status colors */
     --status-available: 142 71% 45%;
-    --status-busy: 38 92% 50%;
-    --status-offline: 220 10% 60%;
+    --status-busy: 188 95% 42%;
+    --status-offline: 222 84% 5%;
 
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(173, 58%, 39%) 0%, hsl(160, 45%, 50%) 100%);
-    --gradient-card-hover: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(173, 30%, 97%) 100%);
-    
-    /* Shadows */
-    --shadow-card: 0 4px 6px -1px hsl(220 25% 10% / 0.05), 0 2px 4px -2px hsl(220 25% 10% / 0.05);
-    --shadow-card-hover: 0 20px 25px -5px hsl(220 25% 10% / 0.08), 0 8px 10px -6px hsl(220 25% 10% / 0.05);
-    --shadow-elevated: 0 25px 50px -12px hsl(220 25% 10% / 0.15);
+    --gradient-hero: linear-gradient(135deg, #0EA5A4 0%, #2563EB 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    --gradient-card-hover: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(178, 85%, 97%) 100%);
+
+    /* Shadows - Multi-layer for depth */
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.08), 0 8px 32px rgba(31, 38, 135, 0.06);
+    --shadow-card-hover: 0 2px 8px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.1), 0 12px 48px rgba(31, 38, 135, 0.08);
+    --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.15), 0 12px 40px rgba(0, 0, 0, 0.12), 0 20px 64px rgba(31, 38, 135, 0.1);
+    --shadow-glass: 0 8px 32px rgba(31, 38, 135, 0.12), 0 16px 64px rgba(31, 38, 135, 0.08);
+    --shadow-glass-hover: 0 12px 40px rgba(31, 38, 135, 0.15), 0 20px 80px rgba(31, 38, 135, 0.1);
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 220 25% 10%;
-    --sidebar-primary: 173 58% 39%;
+    --sidebar-foreground: 222 84% 5%;
+    --sidebar-primary: 178 85% 35%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 173 30% 95%;
-    --sidebar-accent-foreground: 173 58% 30%;
+    --sidebar-accent: 178 30% 95%;
+    --sidebar-accent-foreground: 178 85% 30%;
     --sidebar-border: 210 15% 92%;
-    --sidebar-ring: 173 58% 39%;
+    --sidebar-ring: 178 85% 35%;
   }
 
   .dark {
@@ -78,7 +81,7 @@
     --popover: 220 25% 12%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 173 58% 50%;
+    --primary: 180 58% 39%;
     --primary-foreground: 220 25% 8%;
 
     --secondary: 220 20% 18%;
@@ -87,7 +90,7 @@
     --muted: 220 20% 18%;
     --muted-foreground: 210 15% 60%;
 
-    --accent: 38 85% 55%;
+    --accent: 160 84% 39%;
     --accent-foreground: 220 25% 8%;
 
     --destructive: 0 72% 50%;
@@ -98,7 +101,7 @@
     --ring: 173 58% 50%;
 
     --status-available: 142 60% 50%;
-    --status-busy: 38 85% 55%;
+    --status-busy: 188 85% 55%;
     --status-offline: 220 15% 50%;
 
     --sidebar-background: 220 25% 10%;
@@ -129,50 +132,67 @@
 
 @layer components {
   .card-elevated {
-    @apply bg-card rounded-xl border border-border;
+    @apply bg-white/80 backdrop-blur-glass rounded-xl border border-white/20;
     box-shadow: var(--shadow-card);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .card-elevated:hover {
     box-shadow: var(--shadow-card-hover);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    box-shadow: var(--shadow-glass);
+    position: relative;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.4) 100%);
+    border-radius: 12px 12px 0 0;
   }
 
   .status-badge {
-    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium backdrop-blur-sm;
   }
 
   .status-available {
-    @apply bg-[hsl(var(--status-available)/0.15)] text-[hsl(var(--status-available))];
+    @apply bg-accent/20 text-accent border border-accent/30;
   }
 
   .status-busy {
-    @apply bg-[hsl(var(--status-busy)/0.15)] text-[hsl(var(--status-busy))];
+    @apply bg-primary/20 text-primary border border-primary/30;
   }
 
   .status-offline {
-    @apply bg-[hsl(var(--status-offline)/0.15)] text-[hsl(var(--status-offline))];
+    @apply bg-dark-accent/20 text-dark-accent border border-dark-accent/30;
   }
 
   .filter-chip {
-    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium 
-           bg-secondary text-secondary-foreground border border-transparent
-           transition-all duration-200 cursor-pointer select-none;
-  }
-
-  .filter-chip:hover {
-    @apply bg-primary/10;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium
+           bg-white/60 backdrop-blur-sm border border-white/20 text-foreground
+           transition-all duration-200 cursor-pointer select-none hover:bg-white/80;
   }
 
   .filter-chip.active {
-    @apply bg-primary text-primary-foreground;
+    @apply bg-primary/90 text-primary-foreground border-primary/50;
   }
 
   .search-input {
-    @apply w-full px-4 py-3 pl-12 bg-card border border-border rounded-xl
+    @apply w-full px-4 py-3 pl-12 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl
            text-foreground placeholder:text-muted-foreground
-           focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary
+           focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50
            transition-all duration-200;
   }
 
@@ -181,7 +201,12 @@
   }
 
   .skeleton {
-    @apply bg-muted animate-pulse rounded-lg;
+    @apply bg-white/40 backdrop-blur-sm animate-pulse rounded-lg;
+  }
+
+  .glass-button {
+    @apply bg-white/10 backdrop-blur-glass border border-white/20 hover:bg-white/20
+           transition-all duration-200;
   }
 }
 
@@ -260,14 +285,14 @@
     }
   }
 
-  /* Custom scrollbar styles */
+  /* Modern scrollbar styles */
   .custom-scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--muted-foreground)) transparent;
+    scrollbar-color: rgba(15, 118, 110, 0.3) transparent;
   }
 
   .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
@@ -275,11 +300,16 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted-foreground));
-    border-radius: 3px;
+    background: rgba(15, 118, 110, 0.3);
+    border-radius: 4px;
+    transition: background 0.2s ease;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--foreground));
+    background: rgba(15, 118, 110, 0.5);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background: rgba(15, 118, 110, 0.7);
   }
 }
